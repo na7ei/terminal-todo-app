@@ -13,32 +13,30 @@ export default async function Home() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-900 py-12 px-4">
-      <main className="max-w-2xl mx-auto">
+    <div className="min-h-screen bg-gray-900 flex items-center justify-center py-12 px-6">
+      <main className="w-full max-w-3xl mx-auto">
         <div className="text-center mb-10">
-          <h1 className="text-4xl font-bold text-green-500 mb-2 font-mono">
+          <h1 className="text-5xl font-bold text-green-500 mb-3 font-mono">
             {'> '}Terminal Todo List
           </h1>
-          <p className="text-gray-400 font-mono">
+          <p className="text-gray-400 font-mono text-lg">
             Your command-line style task manager
           </p>
         </div>
-
         <div className="space-y-10">
-          <section className="bg-black/50 backdrop-blur-sm rounded-lg shadow-xl p-6 border border-green-500/30">
-            <div className="mb-6">
-              <div className="flex items-center mb-6">
-                <div className="w-3 h-3 rounded-full bg-red-500 mr-2"></div>
-                <div className="w-3 h-3 rounded-full bg-yellow-500 mr-2"></div>
-                <div className="w-3 h-3 rounded-full bg-green-500"></div>
+          <section className="bg-black/50 backdrop-blur-sm rounded-xl shadow-2xl p-8 border border-green-500/30">
+            <div className="mb-10">
+              <div className="flex items-center mb-8">
+                <div className="w-4 h-4 rounded-full bg-red-500 mr-3"></div>{' '}
+                <div className="w-4 h-4 rounded-full bg-yellow-500 mr-3"></div>
+                <div className="w-4 h-4 rounded-full bg-green-500"></div>
               </div>
               <AddTodoForm />
             </div>
-
             <div>
-              <div className="flex items-center mb-4">
-                <div className="w-2 h-2 bg-green-500 mr-2"></div>
-                <h2 className="text-green-500 font-mono text-lg">
+              <div className="flex items-center mb-6">
+                <div className="w-3 h-3 bg-green-500 mr-3"></div>{' '}
+                <h2 className="text-green-500 font-mono text-xl">
                   Current Tasks ({todos.length})
                 </h2>
               </div>
@@ -46,7 +44,7 @@ export default async function Home() {
             </div>
           </section>
 
-          <footer className="text-center text-gray-500 font-mono text-sm py-4">
+          <footer className="text-center text-gray-500 font-mono text-base py-2">
             <p>Type your task and press Enter to add</p>
             <p>Click on task to toggle status • Click delete to remove</p>
           </footer>
