@@ -9,6 +9,7 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ```bash
 npm install
+npm run build
 npx prisma migrate dev
 npm run dev
 ```
